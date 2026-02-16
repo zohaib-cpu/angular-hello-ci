@@ -45,14 +45,4 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: angular-build
-          path: dist/
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/angular-hello-ci
+      - name: Download build a
